@@ -1,5 +1,5 @@
 CREATE TABLE acc (
-    id INT AUTO_INCREMENT NOT NULL,
+    id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
     server_id INT NOT NULL DEFAULT '0',
     from_uid VARCHAR(64),
     to_uid VARCHAR(64),
@@ -32,7 +32,7 @@ CREATE TABLE acc (
 );
 
 CREATE TABLE missed_calls (
-    id INT AUTO_INCREMENT NOT NULL,
+    id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
     server_id INT NOT NULL DEFAULT '0',
     from_uid VARCHAR(64),
     to_uid VARCHAR(64),
